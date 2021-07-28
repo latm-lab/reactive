@@ -1,0 +1,32 @@
+#N canvas 1109 316 614 384 10;
+#N canvas 0 56 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 85 123 instr.pd (05/jun/2019), f 49;
+#X restore 525 331 pd credits;
+#X text 14 8 REACTIVE;
+#X text 102 105 Instr ARG1;
+#X text 103 119 Ex: instr HELP;
+#X obj 393 307 dac~;
+#X text 93 242 Vol: volume;
+#X text 441 357 REACTIVE (C) LATM - 2021;
+#X text 24 105 Modo de uso:;
+#X text 24 243 Controles:;
+#X text 109 295 - Red (left) -> f0/2;
+#X text 109 278 - Green (right) -> f0 * 2;
+#X text 92 259 Frequência (Vradio e Toggles):;
+#X text 21 36 SIMULADOR DE INSTRUMENTOS;
+#X text 391 36 Descrição: o objeto intr. permite emitir uma frequência
+principal e suas parciais \, obtendo assim um instrumento virtual.
+, f 37;
+#X text 99 149 ARG1 --> Nome do instrumento virtual;
+#X text 23 148 Argumentos:;
+#X text 24 210 Inlets: (nenhum);
+#X obj 415 183 instr B;
+#X obj 392 107 instr A;
+#X connect 17 0 4 1;
+#X connect 18 0 4 0;

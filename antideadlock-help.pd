@@ -1,0 +1,28 @@
+#N canvas 1059 426 473 390 10;
+#X obj 291 119 antideadlock;
+#N canvas 1098 405 450 300 credits 1;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 85 123 antideadlock.pd v1 (03/jun/2013), f 49;
+#X text 87 148 antideadlock.pd v3 (2016), f 49;
+#X restore 399 337 pd credits;
+#X text 315 361 REACTIVE (C) LATM - 2021;
+#X text 14 8 REACTIVE;
+#X text 20 91 Usage: antideadlock;
+#X text 20 122 Arguments: (none);
+#X text 21 36 ANTIDEADLOCK;
+#X obj 293 148 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 246 118 5 0 0 0 - - -;
+#X text 24 220 -> Inlets: - From box number (left);
+#X text 90 236 - From slider (right);
+#X text 22 263 -> Outlets: - To box number (left);
+#X text 94 280 - To slider (right);
+#X connect 0 0 8 0;
+#X connect 0 1 7 0;
+#X connect 7 0 0 1;
+#X connect 8 0 0 0;

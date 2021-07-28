@@ -1,0 +1,101 @@
+#N canvas 123 56 1046 654 10;
+#X text 14 8 REACTIVE;
+#X obj 611 477 dac~;
+#N canvas 22 56 445 482 credits 0;
+#X text 240 454 LATM/FFCLRP-USP 2013-2016;
+#X text -36 18 REACTIVE - timepitch (Time-stretcher and pitch transposer)
+;
+#X text -24 91 Version history:;
+#X text -24 51 License: CC BY SA;
+#X text 23 127 v.1 10/11/16 from timestretch4 rev.10/11/2016;
+#X restore 940 576 pd credits;
+#X text 22 36 TIMEPITCH;
+#X text 22 54 Time Stretcher and Pitch Transposer;
+#X text 22 88 Description:;
+#X text 119 89 Granular-based time-stretcher and pitch transposer tool
+by quantized values of time (musical notes) and pitch (musical intervals)
+with selectable grain form and size;
+#X text 23 145 Usage:;
+#X text 131 163 Ex: timepitch HELP;
+#X text 120 146 timepitch ARG1;
+#X text 22 324 Local controls:;
+#N canvas 143 62 419 362 voluminho 0;
+#X obj 105 106 hsl 80 15 0.001 3 1 0 empty empty empty -2 -8 0 10 -228856
+-1 -1 0 1;
+#X obj 81 67 inlet~;
+#X obj 81 323 outlet~;
+#X obj 102 237 pack 0 10;
+#X text 134 105 vol;
+#X obj 168 125 bng 12 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 217 66 1;
+#X text 156 123 1;
+#X obj 81 297 *~ 0;
+#X obj 102 260 line;
+#X obj 102 150 moses 0.0011;
+#X msg 102 215 0;
+#X obj 102 125 tgl 12 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 13 181 f;
+#X obj -26 130 moses 1;
+#X obj -26 105 f;
+#X obj -26 155 t b;
+#X floatatom 113 297 5 0 0 0 - - -;
+#X obj 171 215 spigot;
+#X obj 13 155 delay 10;
+#X text 115 122 on/off;
+#X connect 0 0 10 0;
+#X connect 0 0 13 1;
+#X connect 1 0 8 0;
+#X connect 3 0 9 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 8 0 2 0;
+#X connect 9 0 8 1;
+#X connect 9 0 17 0;
+#X connect 10 0 11 0;
+#X connect 10 1 18 0;
+#X connect 11 0 3 0;
+#X connect 12 0 15 0;
+#X connect 13 0 0 0;
+#X connect 14 0 16 0;
+#X connect 14 1 19 0;
+#X connect 15 0 14 0;
+#X connect 15 0 18 1;
+#X connect 16 0 11 0;
+#X connect 18 0 3 0;
+#X connect 19 0 13 0;
+#X coords 0 -1 1 1 90 40 2 100 100;
+#X restore 611 428 pd voluminho;
+#X obj 611 36 timepitch Help;
+#X text 22 188 Arguments:;
+#X text 118 188 ARG1 --> Name for timepitch instance;
+#X text 21 212 Inlets: (none);
+#X text 22 242 Remote controls:;
+#X text 128 242 Stretching factor: ARG-stretch;
+#X text 129 262 Pitch factor: ARG-pitch;
+#X text 128 326 Load: load sound file (wav or aiff);
+#X text 128 346 Stop: stops audio & return beginning;
+#X text 128 365 Play/Loop: sound file looping-playback;
+#X text 128 386 Pause: stops audio playback & retain position;
+#X text 127 406 Stretching: time shortening/expanding factor;
+#X text 127 427 Pitch: pitch shifting (2 octaves higher and lower)
+;
+#X text 127 447 Grain size: grain envelope length;
+#X text 127 466 Grain selector: turn on/off grain-channels;
+#X text 127 487 Grain envelope selector: grain type (gaussian/trapezoid)
+;
+#X text 127 544 Interval pitch shift selector: in musical intervals
+;
+#X text 229 581 Time in horizontal axis. Pitch in vertical axis.;
+#X text 127 524 Trapezoid amplitude: change trapezoid shape;
+#X text 127 505 Gaussian sigma: change gaussian shape;
+#X text 127 566 Time-pitch grid: discrete (stretch \, pitch) factor
+selection;
+#X text 128 598 Reset: return (stretch \, pitch)=(1 \, 1);
+#X text 129 281 Stretching factor: ARG-play;
+#X text 130 301 Pitch factor: ARG-stop;
+#X text 856 603 REACTIVE (C) LATM - 2021;
+#X connect 11 0 1 0;
+#X connect 11 0 1 1;
+#X connect 12 0 11 0;

@@ -1,0 +1,19 @@
+#N canvas 0 56 582 224 10;
+#X text 14 8 REACTIVE;
+#X text 86 188 - valor para volume.;
+#X text 23 132 Argumentos: (nenhum);
+#N canvas 0 56 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 82 123 v.1 (15/aug/2020);
+#X restore 501 161 pd credits;
+#X text 418 187 REACTIVE (C) LATM - 2021;
+#X obj 351 94 voluminhost;
+#X text 15 32 VOLUMNINHOST - stereo volume slider w/ on-off button
+;
+#X text 19 169 -> Inlets: - signal (left/middle);
+#X text 23 112 Modo de uso: voluminhost;

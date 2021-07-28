@@ -1,0 +1,32 @@
+#N canvas 1125 66 683 443 10;
+#N canvas 1089 677 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 80 124 datatrack.pd v.1 (23/abr/2018);
+#X restore 589 352 pd credits;
+#X obj 362 131 datatrack;
+#X text 14 8 REACTIVE;
+#X text 23 127 Modo de uso:;
+#X text 24 242 Controles:;
+#X text 22 170 Argumentos:;
+#X text 22 209 Inlets: (nenhum);
+#X text 101 127 progcurve ARG1;
+#X text 32 269 - Botão de start/stop;
+#X text 32 289 - Speed slider: muda a velocidade de varredura de pontos
+;
+#X text 32 309 - Open toggle: carrega um arquivo de array de dados.
+;
+#X text 32 349 - Reset speed: reseta a valocidade de varredura para
+1 ponto/segundo.;
+#X text 32 329 - Save toggle: salva array de dados em um arquivo ".txt".
+;
+#X text 505 383 REACTIVE (C) LATM - 2021;
+#X text 98 171 ARG1 --> Nome do objeto datatrack;
+#X text 102 141 Ex: datatrack HELP;
+#X text 32 380 - Reset n: reseta o valor de n para o ponto de partida.
+;
+#X text 21 36 DATATRACK - data recorder and player;

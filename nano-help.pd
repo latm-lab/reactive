@@ -1,0 +1,33 @@
+#N canvas 155 30 874 678 10;
+#X text 18 13 REACTIVE;
+#X text 29 89 Description:;
+#X text 30 37 nano;
+#X text 29 55 Augmented Nanokontrol2;
+#X text 27 553 Examples:;
+#X text 110 554 You can map nonokontrol's button 1 to control the parameter
+"central frequency" (fc) of the abstraction Funew (progressive filter)
+abstraction for the "Banjo" (as above).;
+#X text 490 552 For this \, one must write in the indicated fields
+the name of the target abstraction (e.g. Banjo) plus "-" and the name
+of the desired parameter to control (e.g. fc). Click in the messages
+to see how it works.;
+#X msg 117 263 9 symbol Banjo-fc;
+#X msg 116 286 10 symbol Banjo-Q;
+#X text 255 240 <-- click in the messages and then try the button 1
+and the sliders 1 and 2 on your nanokontrol2 or on the expanded interface
+below. Notice that the messages just write the target tag you want
+to address.;
+#X text 117 89 Tool to expand Korg Nanokontrol2 surface controlability.
+Every pad/button/slider is mapped in Pd. Every volume button and slider
+can independently address a specific parameter tag defined elsewhere
+(e.g. on another patch).;
+#X text 114 182 Ex: nano Tristao;
+#X text 31 157 Usage: nano <NAME>;
+#X obj 629 29 funew Banjo;
+#X msg 117 240 1 symbol Banjo-vol;
+#X text 544 647 LATM-DM-FFCLRP-USP(c)2017 Reactive. nano (10/05/17)
+;
+#X obj 116 323 nano Tristao;
+#X connect 7 0 16 0;
+#X connect 8 0 16 0;
+#X connect 14 0 16 0;

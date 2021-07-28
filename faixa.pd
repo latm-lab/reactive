@@ -1,0 +1,93 @@
+#N canvas 116 144 443 402 10;
+#X obj 73 280 / 128;
+#X floatatom 18 251 7 0 10000 0 - - -, f 7;
+#X floatatom 17 282 7 0 10000 0 - - -, f 7;
+#X obj 76 231 -;
+#X obj 41 209 delay 20;
+#X obj 73 256 *;
+#X obj 73 304 +;
+#X obj 73 348 outlet;
+#X obj 269 40 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 122 172 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 500 256;
+#X obj 122 155 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X text 101 172 max;
+#X text 101 154 min;
+#X obj 18 39 inlet;
+#X obj 216 41 inlet;
+#X obj 167 40 inlet;
+#X obj 104 135 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 128 256;
+#X text 158 135 max;
+#X text 185 135 <-- max valor entrada: 128 (default);
+#X text 215 56 max out;
+#X text 166 56 min out;
+#X text 185 153 <-- min valor saida;
+#X text 185 171 <-- max valor saida;
+#X obj 104 118 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X text 158 118 min;
+#X text 185 120 <-- min valor entrada: 0 (default);
+#X obj 170 230 -;
+#X obj 126 208 delay 20;
+#X obj 298 41 loadbang;
+#X msg 298 64 0;
+#X msg 329 64 128;
+#X obj 18 165 -;
+#X text 15 12 Faixa - Conversor de faixa de valores;
+#X obj 115 40 inlet;
+#X obj 66 39 inlet;
+#X text 65 55 min in;
+#X text 114 55 max in;
+#X text 101 100 range convrt;
+#N canvas 593 250 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 13 506 comment;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 85 123 faixa.pd v.2 (25/06/21) \, included clip for bounding
+input \; faixa.pd v.1 (04/11/16) based on regra3 v.3.2 (obsolete) \;
+, f 49;
+#X restore 360 343 pd credits;
+#X text 278 368 REACTIVE (C) LATM - 2021;
+#X obj 73 326 clip;
+#X obj 18 98 clip 0 128;
+#X connect 0 0 6 0;
+#X connect 1 0 5 0;
+#X connect 3 0 5 1;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 5 0 2 0;
+#X connect 6 0 40 0;
+#X connect 9 0 3 0;
+#X connect 9 0 40 2;
+#X connect 10 0 3 1;
+#X connect 10 0 6 1;
+#X connect 10 0 4 0;
+#X connect 10 0 40 1;
+#X connect 13 0 41 0;
+#X connect 14 0 9 0;
+#X connect 15 0 10 0;
+#X connect 16 0 26 0;
+#X connect 16 0 41 2;
+#X connect 23 0 26 1;
+#X connect 23 0 27 0;
+#X connect 23 0 31 1;
+#X connect 23 0 41 1;
+#X connect 26 0 0 1;
+#X connect 27 0 26 0;
+#X connect 28 0 29 0;
+#X connect 28 0 30 0;
+#X connect 29 0 23 0;
+#X connect 30 0 16 0;
+#X connect 31 0 1 0;
+#X connect 33 0 16 0;
+#X connect 34 0 23 0;
+#X connect 40 0 7 0;
+#X connect 41 0 31 0;
+#X coords 0 -1 1 1 80 90 2 100 100;

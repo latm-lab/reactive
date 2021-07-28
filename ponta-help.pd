@@ -1,0 +1,26 @@
+#N canvas 0 56 766 380 10;
+#X text 66 159 ARGUMENTOS;
+#X text 71 206 H-Zoom: Zoom horizontal;
+#X text 92 240 *1 - Distância original;
+#X text 92 226 /2 - Distância em 2 vezes;
+#X text 92 272 *3 - Aproximação em 4 vezes;
+#X text 92 255 *2 - Aproximação em 2 vezes;
+#X text 70 190 V-Zoom: Slider para zoom Vertical;
+#X text 71 175 Fator T: Referente ao tamanho do sinal;
+#X obj 392 48 ponta;
+#X text 79 285 Reset: Volta a configuração inicial (V-Zoom = 450 e
+H-Zoom = *1);
+#X text 24 25 REACTIVE;
+#N canvas 0 56 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 81 137 ponta2 (22/out/2013);
+#X text 81 122 ponta (13/out/2014);
+#X restore 685 320 pd credits;
+#X text 602 346 REACTIVE (C) LATM - 2021;
+#X text 48 48 PONTA - probe for verifying signal points in patches
+;

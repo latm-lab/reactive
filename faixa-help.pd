@@ -1,0 +1,41 @@
+#N canvas 137 172 631 423 10;
+#X obj 381 235 faixa;
+#X text 14 8 REACTIVE;
+#N canvas 0 56 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 85 123 faixa.pd v.2 (25/06/21) \, included clip for bounding
+input \; faixa.pd v.1 (04/11/16) based on regra3 v.3.2 (obsolete) \;
+, f 49;
+#X restore 549 372 pd credits;
+#X text 84 297 - maximum output value;
+#X text 84 280 - minimum output value;
+#X text 18 247 -> Inlets: - minimum input value;
+#X text 84 263 - maximum input value;
+#X text 15 32 FAIXA - CONVERSOR DE FAIXA DE VALORES;
+#X text 15 61 Descrição: o objeto faixa é capaz de converter um
+dado valor de entrada pertencente à uma faixa de valores de INPUT
+em um valor da faixa OUTPUT.;
+#X text 16 122 Modo de uso: faixa;
+#X text 16 142 Argumentos: (none);
+#X text 91 342 comment;
+#X text 22 328 -> Outlet: valor convertido.;
+#X text 466 398 REACTIVE (C) LATM - 2021;
+#X floatatom 402 191 5 0 0 2 min - -;
+#X floatatom 444 191 5 0 0 2 max - -;
+#X floatatom 508 189 5 0 0 2 min - -;
+#X floatatom 549 189 5 0 0 2 max - -;
+#X text 399 160 Faixa A;
+#X text 505 158 Faixa B;
+#X floatatom 340 190 5 0 0 0 Valor_de_entrada: - -;
+#X floatatom 381 335 5 0 0 1 valor_de_saída - -;
+#X connect 0 0 21 0;
+#X connect 14 0 0 1;
+#X connect 15 0 0 2;
+#X connect 16 0 0 3;
+#X connect 17 0 0 4;
+#X connect 20 0 0 0;

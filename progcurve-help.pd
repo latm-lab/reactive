@@ -1,0 +1,49 @@
+#N canvas 1087 123 745 558 10;
+#X text 14 8 REACTIVE;
+#X text 23 127 Modo de uso:;
+#X text 24 242 Controles:;
+#X text 22 170 Argumentos:;
+#X text 22 209 Inlets: (nenhum);
+#X obj 410 100 progcurve;
+#X text 21 36 PROGCURVE;
+#X text 101 127 progcurve ARG1;
+#X text 102 141 Ex: progcurve HELP;
+#X text 98 171 ARG1 --> Nome do objeto progcurve;
+#X text 32 269 - Botão de start/stop;
+#X text 22 79 Descrição: curva programável para testes com dados.
+;
+#N canvas 1060 413 450 300 credits 1;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 86 121 progcurve.pd v2.0 (18/set/2013);
+#X text 86 175 progcurve.pd v2.3 (23/abr/2015);
+#X text 86 157 progcurve.pd v2.2 (07/mai/2015);
+#X text 85 236 progcurve.pd v2.6 (14/jun/2018);
+#X text 85 210 progcurve.pd v2.5 (13/mai/2016) - made speed and stop
+adresseble;
+#X text 86 193 progcurve.pd v2.4 (07/jul/2015);
+#X text 86 139 progcurve.pd v2.1 (01/out/2013) - initial release;
+#X restore 649 452 pd credits;
+#X text 32 289 - Speed slider: muda a velocidade de varredura de pontos
+;
+#X text 32 309 - Open toggle: carrega um arquivo de array de dados.
+;
+#X text 32 349 - Change direction: muda a direção percorrida dos
+dados.;
+#X text 32 369 - Reset to min: reseta para o ponto inicial de varredura.
+;
+#X text 32 389 - Reset to max: reseta para o ponto final de varredura.
+;
+#X text 32 409 - Reset speed: reseta a valocidade de varredura para
+1 ponto/segundo.;
+#X text 32 475 - Initial point: define o ponto de partida de varredura.
+;
+#X text 32 442 - Final point: define o ponto final de percorrimento
+dos dados.;
+#X text 32 329 - Save toggle: salva array de dados em um arquivo ".txt".
+;
+#X text 564 476 REACTIVE (C) LATM - 2021;
