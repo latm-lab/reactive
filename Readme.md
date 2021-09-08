@@ -4,6 +4,7 @@
 
 The __Reactive__ is a set of Pure Data patches used for sound processing and musical reactivity. Developed by the __Laboratory of Audio and Musical Technology (LATM)__ placed in __Escola de Artes, Ciências e Humanidades da Universidade de São Paulo (EACH/USP)__, it explores many possibilities of sound manipulation using the most varied tools.
 
+
 The three __main__ objects are:
 
 | Patch | Description |
@@ -11,6 +12,7 @@ The three __main__ objects are:
 | Reactor | Uses stecheometrical concepts metaforically so as to simulate a reaction out of two reagent sounds producing a third one |
 | Timepitch |time-pitch transformer |
 | Funew | Harmonic Progressive filter |
+
 
 The distribution also includes __auxiliary__ objects:
 
