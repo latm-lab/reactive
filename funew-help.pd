@@ -1,4 +1,4 @@
-#N canvas 350 24 902 725 10;
+#N canvas 350 56 902 725 10;
 #X obj 642 163 adc~;
 #X obj 508 569 dac~;
 #X text 545 572 SAIDA: audio;
@@ -19,13 +19,13 @@ Q factor and 20-8kHz central frequence or selectable [fo] and partial
 -1 -1 700 1;
 #X text 547 156 Volume;
 #X obj 513 194 *~ 1;
-#X floatatom 548 195 5 0 0 0 - - -, f 5;
+#X floatatom 548 195 5 0 0 0 - - -;
 #X text 513 236 Select Input;
 #X obj 668 185 hsl 64 15 0 5 0 1 empty empty empty -2 -8 0 10 -262144
 -1 -1 1100 1;
 #X text 699 167 Volume;
 #X obj 665 205 *~ 1;
-#X floatatom 700 206 5 0 0 0 - - -, f 5;
+#X floatatom 700 206 5 0 0 0 - - -;
 #X text 172 442 2 - 2nd order pass-band;
 #X text 172 456 3 - 2nd order vcf band-pass;
 #X text 172 469 4 - 4tn order vcf band-pass;
@@ -34,7 +34,7 @@ Q factor and 20-8kHz central frequence or selectable [fo] and partial
 #X obj 672 133 t;
 #X obj 734 91 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 734 117 1 0 0 0 - - -, f 1;
+#X floatatom 734 117 1 0 0 0 - - -;
 #X obj 704 134 spigot;
 #X text 630 87 toggle to repeat;
 #X text 538 86 click to play \;;
@@ -73,7 +73,7 @@ Q factor and 20-8kHz central frequence or selectable [fo] and partial
 ;
 #N canvas 0 22 557 395 multiplexador 0;
 #X obj 60 197 *~;
-#X obj 103 105 tgl 12 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 103 105 tgl 12 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 89 198 *~;
 #X obj 119 105 tgl 12 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -91,27 +91,27 @@ Q factor and 20-8kHz central frequence or selectable [fo] and partial
 #X msg 273 69 1;
 #X msg 303 69 0;
 #X obj 270 47 route 0 1;
-#X floatatom 214 101 5 0 0 0 - - -, f 5;
-#X floatatom 285 101 5 0 0 0 - - -, f 5;
+#X floatatom 214 101 5 0 0 0 - - -;
+#X floatatom 285 101 5 0 0 0 - - -;
 #X obj 180 236 spigot;
-#X floatatom 213 215 3 0 0 0 - - -, f 3;
-#X floatatom 179 261 5 0 0 0 - - -, f 5;
-#X floatatom 180 216 3 0 0 0 - - -, f 3;
+#X floatatom 213 215 3 0 0 0 - - -;
+#X floatatom 179 261 5 0 0 0 - - -;
+#X floatatom 180 216 3 0 0 0 - - -;
 #X obj 180 191 t f f;
 #X obj 253 237 spigot;
-#X floatatom 286 216 3 0 0 0 - - -, f 3;
-#X floatatom 252 262 5 0 0 0 - - -, f 5;
-#X floatatom 253 217 3 0 0 0 - - -, f 3;
+#X floatatom 286 216 3 0 0 0 - - -;
+#X floatatom 252 262 5 0 0 0 - - -;
+#X floatatom 253 217 3 0 0 0 - - -;
 #X obj 253 192 t f f;
 #X obj 326 237 spigot;
-#X floatatom 359 216 3 0 0 0 - - -, f 3;
-#X floatatom 325 262 5 0 0 0 - - -, f 5;
-#X floatatom 326 217 3 0 0 0 - - -, f 3;
+#X floatatom 359 216 3 0 0 0 - - -;
+#X floatatom 325 262 5 0 0 0 - - -;
+#X floatatom 326 217 3 0 0 0 - - -;
 #X obj 326 192 t f f;
 #X msg 349 68 1;
 #X msg 379 68 0;
 #X obj 346 46 route 0 1;
-#X floatatom 361 100 5 0 0 0 - - -, f 5;
+#X floatatom 361 100 5 0 0 0 - - -;
 #X connect 0 0 9 0;
 #X connect 1 0 0 1;
 #X connect 1 0 22 0;
@@ -162,6 +162,22 @@ Q factor and 20-8kHz central frequence or selectable [fo] and partial
 #X connect 36 0 3 0;
 #X coords 0 -1 1 1 50 22 2 100 100;
 #X restore 597 230 pd multiplexador;
+#N canvas 593 250 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 509 624 LATM-DM-FFCLRP-USP(c)2017 Reactive. Funew v.8.5 (10/05/17)
+;
+#X text 83 206 Funew v.8.1 (06/11/2013);
+#X text 83 186 Funew v.8.2 (19/10/2013);
+#X text 83 161 Funew v.8.3 (27/08/2014);
+#X text 83 141 Funew v.8.4 (24/05/2016);
+#X text 83 122 Funew v.8.5 (10/05/2017);
+#X restore 798 656 pd credits;
+#X text 716 681 REACTIVE (C) LATM - 2021;
 #X connect 0 0 21 0;
 #X connect 3 0 16 0;
 #X connect 6 0 63 1;

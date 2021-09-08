@@ -1,0 +1,18 @@
+#N canvas 1095 435 571 341 10;
+#X obj 271 75 espectro;
+#N canvas 1054 143 450 300 credits 0;
+#X text 17 87 License: CC BY;
+#X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
+- USP 2013-2021;
+#X text 18 123 History:;
+#X text 18 20 REACTIVE - Sound processors library for reactive musical
+applications;
+#X text 83 124 espectro.pd 27/nov/2007;
+#X restore 476 279 pd credits;
+#X text 14 8 REACTIVE;
+#X text 392 307 REACTIVE (C) LATM - 2021;
+#X text 21 36 ESPECTRO;
+#X text 13 86 Descrição: visualizador espectral.;
+#X text 15 115 Modo de uso: espectro;
+#X text 12 135 Argumentos: (nenhum);
+#X text 12 190 -> Inlets: - sinal de entrada;

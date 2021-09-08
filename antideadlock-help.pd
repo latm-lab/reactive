@@ -1,6 +1,6 @@
-#N canvas 1059 426 473 390 10;
-#X obj 291 119 antideadlock;
-#N canvas 1098 405 450 300 credits 1;
+#N canvas 170 150 473 390 10;
+#X obj 265 65 antideadlock;
+#N canvas 430 204 450 300 credits 0;
 #X text 17 87 License: CC BY;
 #X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
 - USP 2013-2021;
@@ -22,6 +22,7 @@ applications;
 #X text 90 236 - From slider (right);
 #X text 22 263 -> Outlets: - To box number (left);
 #X text 94 280 - To slider (right);
+#X obj 306 321 antideadlock;
 #X connect 0 0 8 0;
 #X connect 0 1 7 0;
 #X connect 7 0 0 1;
