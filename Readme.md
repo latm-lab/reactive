@@ -2,7 +2,7 @@
 ### Description:
 
 
-The __Reactive__ is a set of Pure Data patches used for sound processing and musical reactivity. Developed by the __Laboratory of Audio and Musical Technology (LATM)__ placed in __Escola de Artes, Ciências e Humanidades da Universidade de São Paulo (EACH/USP)__, it explores many possibilities of sound manipulation using the most varied tools.
+The __Reactive__ is a set of Pure Data patches used for sound processing and musical reactivity. Developed by the __Laboratory of Audio and Musical Technology (LATM)__ of the __School of Arts, Sciences and Humanities of the University of São Paulo (EACH/USP)__. Inspired by the concept of chemical reactions, it explores possibilities for sound processing where a sound reacts to another producing a third sound and residuals.
 
 
 The three __main__ objects are:
