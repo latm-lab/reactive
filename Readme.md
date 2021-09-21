@@ -39,7 +39,7 @@ Required __Pure Data__ externals:
 - [__iemlib__](https://github.com/iem-projects/pd-iem)
 - [__cyclone__](https://github.com/porres/pd-cyclone)
 - [__zexy__](https://github.com/iem-projects/pd-zexy)
-- __deken__
+- [__deken__](https://github.com/pure-data/deken)
 
 Other libraries:
 - __Pdescriptors_v1.2/Spectral Features__
