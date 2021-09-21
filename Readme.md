@@ -36,7 +36,7 @@ For the correct object instantiation inside the Reactor patch, it needs some spe
 
 Required __Pure Data__ externals:
 - __ggee__
-- __iemlib v0.0__
+- __iemlib__
 - __cyclone__
 - __zexy__
 - __deken__
