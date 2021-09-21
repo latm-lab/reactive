@@ -10,15 +10,15 @@ The three __main__ objects are:
 | Patch | Description |
 | ------ | ------ |
 | Reactor | Uses stecheometrical concepts metaforically so as to simulate a reaction out of two reagent sounds producing a third one |
-| Timepitch |time-pitch transformer |
-| Funew | Harmonic Progressive filter |
+| Timepitch |Time-pitch transformer, over a discrete musical note and duration grid|
+| Funew | Harmonic progressive filter, with n-order filtering options |
 
 
 The distribution also includes __auxiliary__ objects:
 
 | Patch | Description |
 | ------ | ------ |
-| Datatrack | Data management and control |
+| Datatrack | Data recorder and player. |
 | Progcurve | Programable curve for data management and control in a Pure Data patch. |
 | Ponta | Probe for verifying signal points in patches. |
 | Patchbay | Router for several multichannel formats outputs |
