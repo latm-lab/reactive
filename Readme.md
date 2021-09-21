@@ -35,10 +35,10 @@ The distribution also includes __auxiliary__ objects:
 For the correct object instantiation inside the Reactor patch, it needs some specific externals and libraries to be downloaded in your machine.
 
 Required __Pure Data__ externals:
-- __ggee__
-- __iemlib__
-- __cyclone__
-- __zexy__
+- [__ggee__](https://github.com/pd-externals/ggee)
+- [__iemlib__](https://github.com/iem-projects/pd-iem)
+- [__cyclone__](https://github.com/porres/pd-cyclone)
+- [__zexy__](https://github.com/iem-projects/pd-zexy)
 - __deken__
 
 Other libraries:
