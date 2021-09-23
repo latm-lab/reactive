@@ -33,7 +33,7 @@ O Reator Musical consiste na ideia de realizar reações com sons \,
 ou seja \, assim como ocorre na química \, reações entre substãncias
 \, teremos reações de sons \, dentre algumas possibilidades a seguir
 \, que podem ser:;
-#X obj 51 32 image reactivelogo.gif 0;
+#X obj 51 32 image reactivelogo.gif;
 #X text 84 43 REACTIVE;
 #X obj 167 537 patchbay;
 #X obj 449 662 s~ S3;
