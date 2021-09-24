@@ -32,7 +32,7 @@ The distribution also includes __auxiliary__ objects:
 
 ### Documentation and instructions (read carefully before using the patch):
 
-For the correct object instantiation inside the Reactor patch, it needs some specific externals and libraries to be downloaded in your machine.
+For the correct object instantiation inside the Reactor patch, it requires some specific externals and libraries to be installed.
 
 Required __Pure Data__ externals:
 - [__ggee__](https://github.com/pd-externals/ggee)
@@ -62,7 +62,9 @@ __Adding Pdescriptors to your libraries path:__
 ## Articles
 
 1. Faria, Regis Rossi A.; Cunha Júnior, Ruy B.; Afonso, Eduardo da Silva. Reactive music: designing interfaces and sound processors for real-time music processing. In: Proceedings of the 11th International Symposium on Computer Music Multidisciplinary Research (CMMR), Plymouth, 2015.
-2. Faria, Regis Rossi A., Afonso, Eduardo da Silva. , Junior, Ruy Borges da Cunha. Suíte de Software para Música Reativa. In: Congresso de Engenharia de Áudio, 11. , São Paulo, 2013. Disponível em: http://aesbrasil.org/congressos/anais/ 14 de setembro de 2015.
+2. Faria, Regis Rossi A., Afonso, Eduardo da Silva. , Junior, Ruy Borges da Cunha. Suíte de Software para Música Reativa. In: Congresso de Engenharia de Áudio, 11. , São Paulo, 2013. Available at http://aesbrasil.org.br/congressos/anais/, 14 
+Sept. 2015.
+3. Faria, R.R.A.; Lavandeira, G. O. ; Sulpicio, E. C. M. G. Percussão múltipla sob interatividade reativa e projeção espacial. In: 14o Encontro Internacional de Música e Mídia, 2018, São Paulo. Anais, 2018.
 
 ## License
 
