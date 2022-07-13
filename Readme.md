@@ -44,7 +44,7 @@ Required __Pure Data__ externals:
 Other libraries:
 - __Pdescriptors_v1.2/Spectral Features__
 
-For Reactor: The __Pdescriptors__ is the only library that isn't an external and it should be added to your dependencies path (see below). It is a collection of objects used for sound description. It can be downloaded in the following link: https://sites.google.com/site/pdescriptors/.
+For the Reactor: The __Pdescriptors__ is a library that isn't an external and should be added to your dependencies path (see below). It is a collection of objects used for sound description. It can be downloaded in the following link: https://github.com/AdrianoMonteiro/PDescriptors-v2
 
 __How to download Pd externals:__
 
