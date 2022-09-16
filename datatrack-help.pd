@@ -1,4 +1,4 @@
-#N canvas 117 224 704 494 10;
+#N canvas 211 175 756 510 10;
 #N canvas 969 446 450 300 credits 0;
 #X text 17 87 License: CC BY;
 #X text 17 50 (C) LATM - Laboratory of Audio and Music Technologies
@@ -7,44 +7,66 @@
 #X text 18 20 REACTIVE - Sound processors library for reactive musical
 applications;
 #X text 80 124 datatrack.pd v.1 (23/abr/2018);
-#X restore 617 422 pd credits;
-#X obj 362 131 datatrack;
+#X text 80 139 v.2 (01/sep/2022);
+#X restore 665 460 pd credits;
+#X obj 415 188 datatrack HELP;
 #X text 14 8 REACTIVE;
-#X text 20 92 Argumentos:;
-#X text 532 453 REACTIVE (C) LATM - 2021;
-#X text 96 93 ARG1 --> Nome do objeto datatrack;
 #X text 21 63 Description: data recorder and player;
 #X text 21 36 DATATRACK;
-#X floatatom 423 73 5 0 0 0 - - -;
-#X floatatom 430 261 5 0 0 0 - - -;
-#X text 20 243 Outlet: 1) value;
-#X obj 596 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X floatatom 405 127 5 0 0 0 - - -;
+#X floatatom 443 339 5 0 0 0 - - -;
+#X obj 726 13 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 20 119 Modo de criar:;
-#X text 131 136 ex: datatrack HELP;
-#X text 118 119 datatrack ARG1;
-#X text 542 81 enable record data;
-#X text 391 56 data (number) samples to input;
-#X text 469 262 data (numbers) playing out;
-#X text 20 222 Inlets: 1) value 2) "rec" enable;
-#X text 62 163 record 100 numbers serially \, playback them in same/greater/lower
-speed \, save your array to file \, load your array previously recorded
-from file, f 46;
+#X text 95 119 datatrack ARG1;
 #X text 19 162 Usage:;
-#X text 20 266 Receive command at ARG1-save to save to file objARG1
+#X text 20 285 Receive command at ARG1-save to save to file objARG1
 ;
-#X text 20 287 Receive command at ARG1-load to load from file objARG1
+#X text 20 302 Receive command at ARG1-load to load from file objARG1
 ;
-#X text 22 318 Controls:;
-#X text 30 362 - Speed slider: changes swipe speed to read numbers
+#X text 22 333 Controls:;
+#X text 30 397 - Open toggle: loads a data array file;
+#X text 30 417 - Save toggle: saves the data array to a text file;
+#X text 30 438 - Reset speed: resets the swipe speed = 1 point/second
 ;
-#X text 30 382 - Open toggle: loads a data array file;
-#X text 30 402 - Save toggle: saves the data array to a text file;
-#X text 30 423 - Reset speed: resets the swipe speed = 1 point/second
-;
-#X text 30 445 - Reset n: resets the value of n back to the starting
+#X text 30 460 - Reset n: resets the value of n back to the starting
 point;
-#X text 30 342 - Start/stop button;
-#X connect 1 0 9 0;
-#X connect 8 0 1 0;
-#X connect 11 0 1 1;
+#X text 30 357 - Start/stop button;
+#X floatatom 637 57 5 0 0 0 - - -;
+#X obj 614 80 s HELP-arraysize;
+#X msg 601 56 200;
+#X text 482 333 see your data (numbers) playing out here, f 24;
+#X text 584 482 REACTIVE (C) LATM - 2022;
+#X text 19 92 Arguments:;
+#X text 93 93 ARG1 --> name to new datatrack object;
+#X text 20 119 Creation:;
+#X text 118 138 ex: datatrack HELP;
+#X text 20 251 Inlets: 1) value (data) 2) "rec" enable;
+#X text 20 268 Outlet: 1) value (data);
+#X text 30 377 - Speed slider: changes swipe speed to read numbers
+in array;
+#X text 445 114 3 Start recording data \, and enter (numbers) samples
+here \, to record in internal array, f 33;
+#X text 445 152 Stop anytime \, or it will overwrite from start.;
+#X text 487 13 1 Enable record data (through inlet 2);
+#X text 389 53 2 Internal arraysize=100 \, set another arraysize N
+here (through ARG1-arraysize message), f 33;
+#X text 443 299 4 Disable rec toggle \, and then playback your recorded
+data pushing Start/Stop., f 41;
+#X text 438 377 You want to record data on a rate = Speed = 4 points/sec
+for T=1min=60seconds? This will require an array of N=T*Speed=240 points.
+Send:, f 48;
+#X msg 485 418 240;
+#X obj 485 441 s HELP-arraysize;
+#X msg 452 419 4;
+#X obj 452 462 s HELP-speed;
+#X text 61 161 record N numbers serially into an array (default N=100)
+\; playback them in Speed points/sec \; save your array to file \,
+load your array previously recorded from file \; each n point in array
+holds 1 value (number data), f 46;
+#X connect 1 0 6 0;
+#X connect 5 0 1 0;
+#X connect 7 0 1 1;
+#X connect 18 0 19 0;
+#X connect 20 0 19 0;
+#X connect 36 0 37 0;
+#X connect 38 0 39 0;
