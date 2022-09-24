@@ -1,34 +1,34 @@
-# Reactive - Sound processors library for reactive musical applications
+# REACTIVE - Sound processors library for reactive music applications
 ### Description:
 
+__Reactive__ is a set of patches and abstractions for Pure Data (Pd) aiming a class of sound processing for musical reactivity. Developed by the __Laboratory of Audio and Musical Technology (LATM)__ of the __School of Arts, Sciences and Humanities of the University of São Paulo (EACH/USP)__.
 
-The __Reactive__ is a set of Pure Data patches used for sound processing and musical reactivity. Developed by the __Laboratory of Audio and Musical Technology (LATM)__ of the __School of Arts, Sciences and Humanities of the University of São Paulo (EACH/USP)__. Inspired by the concept of chemical reactions, it explores possibilities for sound processing where a sound reacts to another producing a third sound and residuals.
-
+Inspired by the concept of chemical reactions, it explores possibilities for sound processing where a sound reacts to another producing a third sound and residuals. 
 
 The three __main__ objects are:
 
 | Patch | Description |
 | ------ | ------ |
-| Reactor | Uses stecheometrical concepts metaforically so as to simulate a reaction out of two reagent sounds producing a third one |
-| Timepitch |Time-pitch transformer, over a discrete musical note and duration grid|
+| Reactor | Uses stecheometrical concepts metaforically, so as to simulate a reaction out of two reagent sounds producing a third one |
+| Timepitch |Granular time-pitch modifier, operating over a discrete grid of musical notes and durations|
 | Funew | Harmonic progressive filter, with n-order filtering options |
 
 
-The distribution also includes __auxiliary__ objects:
+The distribution also includes __auxiliary__ objects (abstractions):
 
 | Patch | Description |
 | ------ | ------ |
-| Datatrack | Data recorder and player. |
-| Progcurve | Programable curve for data management and control in a Pure Data patch. |
-| Ponta | Probe for verifying signal points in patches. |
-| Patchbay | Router for several multichannel formats outputs |
+| Datatrack | Data recorder and player |
+| Progcurve | Programable curve, for sequential data management and control |
+| Ponta | Probe for verifying signal points in patches |
+| Patchbay | Router, for several multichannel output formats |
 | Espectro | Spectrum visualizer |
-| Faixa | Range converter. |
-| Instr | Instrument simulator. |
-| Nano | Tool to expand Korg Nanokontrol2 surface controlability. |
-| Antideadlock | Antideadlock for sliders. |
-| Voluminho | Mono volume slider with on/off button. |
-| Voluminhost | Stereo volume slider with on/off button. |
+| Faixa | Range converter |
+| Instr | Simple musical instrument simulator |
+| Nano | Tool to expand Korg Nanokontrol2 surface controlability |
+| Antideadlock | Anti-deadlock for sliders |
+| Voluminho | Mono volume slider with on/off button |
+| Voluminhost | Stereo volume slider with on/off button |
 
 ### Documentation and instructions (read carefully before using the patch):
 
@@ -68,6 +68,6 @@ Sept. 2015.
 
 ## License
 
-CC BY (2013-2021)
+CC BY (2013-2022)
 
   
